@@ -24,7 +24,7 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
     - Within the python shell run
       - `from api.models import Organization`
       - `from api.models import Event`
-      - Right now, events are dependant on the existence of an organization, so createa orgs first
+      - Right now, events are dependant on the existence of an organization, so create orgs first
       - Create a few organizations using the following commands
         - `org = Organization(name = YOUR_CHOSEN_NAME, organization_id= A_STRING_IDENTIFIER)`
         - `org.save()`
