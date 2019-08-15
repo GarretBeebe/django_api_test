@@ -26,7 +26,7 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
       - `from api.models import Event`
       - Right now, events are dependant on the existence of an organization, so create orgs first
       - Create a few organizations using the following commands
-        - `org = Organization(name = YOUR_CHOSEN_NAME, organization_id= A_STRING_IDENTIFIER)`
+        - `org = Organization(name = YOUR_CHOSEN_NAME, organization_id=INTEGER)`
         - `org.save()`
       - Create a few events using the following commands
         - `event = Event(event_name = YOUR_CHOSEN_NAME, organization_name=A_STRING_IDENTIFIER, event_start_date=YYYY-MM-DD HH:MM, ticket_cost=DECIMAL_VALUE)`
