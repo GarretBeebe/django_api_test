@@ -1,1 +1,1 @@
-web: gunicorn gb-django-api-test.wsgi --log-level=info --log-file -
+web: gunicorn django_api_test.wsgi --log-level=info --log-file -
