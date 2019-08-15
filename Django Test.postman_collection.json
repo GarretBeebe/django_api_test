@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "045f4af6-881f-4bd8-9311-37f6a6442e5c",
+		"name": "Django Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "django get test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/event/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "django put test",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"event_name\" : \"updated name\",\n\t\"organization_name\" :\"updated org\",\n\t\"ticket_cost\": \"500.00\",\n\t\"event_start_date\": \"2019-09-02 14:00:00.00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/event/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"event",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku django get test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gb-django-api-test.herokuapp.com/api/event",
+					"protocol": "https",
+					"host": [
+						"gb-django-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku django put test",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"event_name\" : \"updated name\",\n\t\"organization_name\" :\"org1\",\n\t\"ticket_cost\": \"500.00\",\n\t\"event_start_date\": \"2019-09-02 14:00:00.00\"\n}"
+				},
+				"url": {
+					"raw": "https://gb-django-api-test.herokuapp.com/api/event/1/",
+					"protocol": "https",
+					"host": [
+						"gb-django-api-test",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"event",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
