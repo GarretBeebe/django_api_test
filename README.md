@@ -29,7 +29,7 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
         - `org = Organization(name = YOUR_CHOSEN_NAME, organization_id= A_STRING_IDENTIFIER)`
         - `org.save()`
       - Create a few events using the following commands
-        - `event = Event(event_name = YOUR_CHOSEN_NAME, organization_name=A_STRING_IDENTIFIER, event_start_date=A_DATE, ticket_cost=DECIMAL_VALUE)`
+        - `event = Event(event_name = YOUR_CHOSEN_NAME, organization_name=A_STRING_IDENTIFIER, event_start_date=YYYY-MM-DD HH:MM, ticket_cost=DECIMAL_VALUE)`
         - `Event.save()`
       - Once you have created a few orgs and events run:
         - `exit()`
