@@ -43,11 +43,11 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
   - In the root of the directory is a Postman collection
   - This collection will provide templates for testing the endpoints locally as well on Heroku
 
-- **`GET /api/event`**
+- **`GET /api/events`**
     - Fetch events
     - Pass query paremeters for event_name, organization_name, event_start_date, and ticket_cost to narrow search
     - ticket_cost and event_start_date will accept gte and lte query parameters
-- **`PUT /api/event/{:id}`**
+- **`PUT /api/events/{:id}`**
     - Updates event information as long as appropriate fields exist and the organization exists.
     - Payload example:
       - {
@@ -60,4 +60,4 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
 ### Heroku Application
 
 - Endpoints can be found at:
-  - `https://gb-django-api-test.herokuapp.com/api/event`
+  - `https://gb-django-api-test.herokuapp.com/api/events`
