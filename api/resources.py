@@ -14,10 +14,10 @@ class EventResource(ModelResource):
     filtering = {
         'event_name': ALL,
         'organization_name': ALL,
-        'event_start_date': ALL,
-        'ticket_price': ALL,
+        'event_start_date': ['gte', 'lte'],
+        'ticket_cost': ['gte', 'lte'],
     }
-    resource_name = 'event'
+    resource_name = 'events'
 
     queryset = Event.objects.all()
 
