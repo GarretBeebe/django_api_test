@@ -141,6 +141,51 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "django get test with range parameters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/events/?event_start_date__lte=2019-09-02&ticket_cost__gte=100.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"events",
+						""
+					],
+					"query": [
+						{
+							"key": "event_start_date__lte",
+							"value": "2019-09-02"
+						},
+						{
+							"key": "ticket_cost__gte",
+							"value": "100.00"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -46,6 +46,7 @@ Test site for exploring Django, TastyPie, and the Heroku Python build pack
 - **`GET /api/event`**
     - Fetch events
     - Pass query paremeters for event_name, organization_name, event_start_date, and ticket_cost to narrow search
+    - ticket_cost and event_start_date will accept gte and lte query parameters
 - **`PUT /api/event/{:id}`**
     - Updates event information as long as appropriate fields exist and the organization exists.
     - Payload example:
