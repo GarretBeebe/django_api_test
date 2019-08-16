@@ -23,6 +23,7 @@ class EventResource(ModelResource):
 
   def obj_update(self, bundle, **kwargs):
     errors = {}
+    # basic existence validations for json values
     if not bundle.data:
       error['no_data'] = 'No data provided'
     if bundle.data.get('event_name', '') == '':
