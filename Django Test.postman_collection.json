@@ -25,7 +25,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/event/",
+					"raw": "http://localhost:8000/api/events/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -33,7 +33,7 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"event",
+						"events",
 						""
 					]
 				}
@@ -57,7 +57,7 @@
 					"raw": "{\n\t\"event_name\" : \"updated name\",\n\t\"organization_name\" :\"updated org\",\n\t\"ticket_cost\": \"500.00\",\n\t\"event_start_date\": \"2019-09-02 14:00:00.00\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/event/1/",
+					"raw": "http://localhost:8000/api/evenst/1/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -65,7 +65,7 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"event",
+						"evenst",
 						"1",
 						""
 					]
@@ -93,7 +93,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://gb-django-api-test.herokuapp.com/api/event",
+					"raw": "https://gb-django-api-test.herokuapp.com/api/events?event_name=event2",
 					"protocol": "https",
 					"host": [
 						"gb-django-api-test",
@@ -102,7 +102,13 @@
 					],
 					"path": [
 						"api",
-						"event"
+						"events"
+					],
+					"query": [
+						{
+							"key": "event_name",
+							"value": "event2"
+						}
 					]
 				}
 			},
@@ -125,7 +131,7 @@
 					"raw": "{\n\t\"event_name\" : \"updated name\",\n\t\"organization_name\" :\"org1\",\n\t\"ticket_cost\": \"500.00\",\n\t\"event_start_date\": \"2019-09-02 14:00:00.00\"\n}"
 				},
 				"url": {
-					"raw": "https://gb-django-api-test.herokuapp.com/api/event/1/",
+					"raw": "https://gb-django-api-test.herokuapp.com/api/events/1/",
 					"protocol": "https",
 					"host": [
 						"gb-django-api-test",
@@ -134,7 +140,7 @@
 					],
 					"path": [
 						"api",
-						"event",
+						"events",
 						"1",
 						""
 					]
